@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Tip Calculator from frontend Mentor Chanllenge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./images/logo.svg" />
+      </div>
+
+      <div class="info-container">
+        <div class="wrapper">
+          <div class="bill">
+            <fieldset>
+              <legend>Bill</legend>
+              <img src="./images/icon-dollar.svg" alt="Dollar icon" />
+              <input type="number" id="bill" placeholder="0" />
+            </fieldset>
+          </div>
+
+          <fieldset>
+            <legend class="tip-legend">Select Tip %</legend>
+            <div class="select-tip">
+              <button>5%</button>
+              <button>10%</button>
+              <button>15%</button>
+              <button>25%</button>
+              <button>50%</button>
+              <input type="button" class="custom" value="Custom" />
+            </div>
+          </fieldset>
+
+          <div class="number-of-people">
+            <fieldset>
+              <legend>Number of People</legend>
+              <img src="./images/icon-person.svg" alt="Person Icon" />
+              <input
+                type="number"
+                id="number-of-people"
+                oninput="calculating()"
+                placeholder="0"
+              />
+            </fieldset>
+          </div>
+        </div>
+        <div class="total-container">
+          <div class="amount">
+            <div class="tip-amount">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+
+            <div class="price"><h1 id="tip-price">$0.00</h1></div>
+
+            <div class="total">
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+
+            <div class="price"><h1 id="total-price">$0.00</h1></div>
+          </div>
+
+          <button onclick="reset()" id="reset" disabled>RESET</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
