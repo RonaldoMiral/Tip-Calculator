@@ -82,6 +82,8 @@ function reset() {
   number_of_people.value = "";
   total_price.innerText = "$0.00";
   tip_price.innerText = "$0.00";
+  tip_buttons[tip_buttons.length - 1].setAttribute("type", "button");
+  tip_buttons[tip_buttons.length - 1].value = "Custom";
   tip = 1;
   document.getElementById("reset").disabled = true;
 
