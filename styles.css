@@ -225,9 +225,10 @@ input::-webkit-outer-spin-button,
 
   .info-container {
     max-width: 924px;
-    width: 99%;
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+    align-self: start;
   }
 
   .wrapper {
