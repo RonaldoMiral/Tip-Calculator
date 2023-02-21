@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
 }
 
 .container {
-  width: 375px;
+  min-width: 375px;
   background-color: var(--lt-gy-cyan);
   margin: auto;
 
@@ -31,6 +31,10 @@ body::-webkit-scrollbar {
   height: 144px;
   display: grid;
   place-items: center;
+}
+
+.logo img {
+  display: block;
 }
 
 .info-container {
@@ -204,7 +208,7 @@ input::-webkit-outer-spin-button,
   outline: 3px solid red;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 940px) {
   /* 946 */
   .container {
     width: 100vw;
